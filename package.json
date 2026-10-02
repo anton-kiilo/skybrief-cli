@@ -1,0 +1,33 @@
+{
+  "name": "skybrief-cli",
+  "version": "1.0.0",
+  "description": "A minimalist weather CLI for quick forecasts in your terminal",
+  "keywords": [
+    "weather",
+    "forecast",
+    "cli",
+    "terminal",
+    "command-line",
+    "weather-cli",
+    "forecast-cli",
+    "node",
+    "npm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anton-kiilo/skybrief-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/anton-kiilo/skybrief-cli/issues",
+    "email": "kiyloanton@gmail.com"
+  },
+  "license": "ISC",
+  "author": "Anton Kiilo",
+  "type": "commonjs",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
