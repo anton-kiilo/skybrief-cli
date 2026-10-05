@@ -23,11 +23,16 @@
   },
   "license": "ISC",
   "author": "Anton Kiilo",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
-  "bin": "./index.js",
+  "bin": {
+    "skybrief": "index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.20.0"
   }
 }
