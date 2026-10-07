@@ -1,7 +1,8 @@
 import { homedir } from 'os';
 import { join } from 'path';
 import { promises } from 'fs';
-import { printError, printSuccess } from './log.service.js';
+import { printError, printSuccess, printWeather } from './log.service.js';
+import { getWeather, getIcon } from './api.service.js';
 
 const TOKEN_DICTIONARY = {
 	token: 'token',
