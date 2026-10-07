@@ -1,6 +1,6 @@
 {
   "name": "skybrief-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A minimalist weather CLI for quick forecasts in your terminal",
   "keywords": [
     "weather",
