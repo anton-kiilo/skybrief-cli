@@ -1,18 +1,21 @@
 #!/usr/bin/env node
 import { parseArguments } from './helpers/arguments.js';
+import { saveToken, saveCity, getForecast } from './services/storage.service.js';
+import { printHelp } from './services/log.service.js';
 
 const initCLI = () => {
   const args = parseArguments(process.argv);
 
   if (args.h) {
-    console.log('Get help');
+    return printHelp();
   }
   if (args.s) {
-    console.log('Save location');
+    return saveCity(args.s);
   }
   if (args.t) {
-    console.log('Add token');
+    return saveToken(args.t);
   }
+  return getForecast();
 };
 
 initCLI();
